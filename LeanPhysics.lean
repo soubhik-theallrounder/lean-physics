@@ -1,6 +1,8 @@
 import LeanPhysics.SplitComplex
 import LeanPhysics.Oscillator
 import LeanPhysics.Heisenberg
+import LeanPhysics.Galilean
+import LeanPhysics.FreeFall
 
 open LeanPhysics
 
@@ -11,3 +13,7 @@ open LeanPhysics
 #print axioms Phase.period_six
 #print axioms commutator
 #print axioms number_commutes
+#print axioms GEvent.boost_add
+#print axioms GEvent.simultaneous_distance
+#print axioms Fall.run_x
+#print axioms Fall.work_energy

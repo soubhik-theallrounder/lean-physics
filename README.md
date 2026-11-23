@@ -1,6 +1,6 @@
 # LeanPhysics
 
-Small, self-contained Lean 4 formalizations of three physics ideas. Everything
+Small, self-contained Lean 4 formalizations of five physics ideas. Everything
 is over `Int` / `Nat` using only Lean's core library (no Mathlib), so each
 statement is exact and checks in under a second.
 
@@ -15,6 +15,8 @@ statement is exact and checks in under a second.
 | `LeanPhysics/SplitComplex.lean` | Special relativity in 1+1 dimensions. Events are split-complex numbers `t + x·j` (`j² = 1`); boosts are multiplication. | `interval_mul` (the interval is multiplicative), `boost_preserves_interval`, `lightcone_invariant`, `causal_invariant`, `unit_norm_trivial` |
 | `LeanPhysics/Oscillator.lean` | A symplectic-Euler harmonic oscillator whose modified energy `x² + xp + p²` is conserved exactly. | `energy_iter`, `period_six`, area preservation |
 | `LeanPhysics/Heisenberg.lean` | Quantum oscillator ladder operators on occupation-number states. | `commutator` (`[a, a†] = 1`), `number_basis` (`N eₖ = k eₖ`), `number_commutes` (`[N, a†] = a†`) |
+| `LeanPhysics/Galilean.lean` | Galilean relativity: boosts compose by adding velocities, time is absolute, simultaneous distances are invariant. | `boost_add`, `boost_neg`, `simultaneous_distance` |
+| `LeanPhysics/FreeFall.lean` | Constant acceleration with a discrete clock; exact kinematics and a work-energy identity. | `run_v`, `run_x`, `work_energy` |
 
 ## Build
 

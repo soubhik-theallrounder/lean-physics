@@ -1,0 +1,6 @@
+name = "LeanPhysics"
+version = "0.1.0"
+defaultTargets = ["LeanPhysics"]
+
+[[lean_lib]]
+name = "LeanPhysics"
